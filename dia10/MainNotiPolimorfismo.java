@@ -17,11 +17,17 @@ public class MainNotiPolimorfismo {
         // No es polimorfismo
         Notificacion cesar = new Notificacion();
 
+        // Prueba de Miguel
+        NotiEmail pruebaMiguel = new NotiEmail();
+
         medioEmail.enviar();
         medioSMS.enviar();
         medioWhatsapp.enviar();
         cesar.enviar();
         // Revisando - override
         medioSlack.enviar();
+
+        // Prueba de Miguel
+        pruebaMiguel.enviar();
     }
 }
