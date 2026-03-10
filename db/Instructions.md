@@ -64,7 +64,9 @@ CREATE TABLE alumnos (
 ```sql
 INSERT INTO alumnos (nombre, edad) VALUES
 ('César', 24),
-('Karla', 26);
+('Karla', 26),
+('Miguel', 37)
+;
 ```
 
 10.- Descargar previamente el MySQL-Connector desde esta [url](https://dev.mysql.com/downloads/connector/j/).
@@ -74,13 +76,13 @@ INSERT INTO alumnos (nombre, edad) VALUES
 ## Windows
 
 ```bash
-javac -cp "ejercicios_clase/alumnos/lib/*;." ejercicios_clase/alumnos/GrupoTg.java
+javac -cp "ejercicios_clase/alumnos/lib/*;." ejercicios_clase/alumnos/*.java
 ```
 
 ## MacOS / Linux
 
 ```bash
-javac -cp "ejercicios_clase/alumnos/lib/*" ejercicios_clase/alumnos/GrupoTg.java
+javac -cp "ejercicios_clase/alumnos/lib/*:." ejercicios_clase/alumnos/*.java
 ```
 
 12.- Ejecutar nuestro proyecto
