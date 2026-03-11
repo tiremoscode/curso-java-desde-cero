@@ -2,9 +2,18 @@ package ejercicios_clase.alumnos;
 
 import java.sql.*;
 
-public class GrupoTg {
+public class LeerAlumnos {
     public static void main(String[] args) {
-        System.out.println("Clase de Java");
+
+        /**
+         * CRUD es una aplicación que permite:
+         * C - Create - Permite registrar un nuevo dato
+         * R - Read - Lectura de los datos existentes
+         * U - Update - Actualiza un dato existente.
+         * D - Delete - Elimina física de un dato existente (PELIGROSO, no se recupera
+         * dicho dato).
+         */
+
         Connection conn = ConexionDB.conectar();
 
         try {
@@ -26,7 +35,7 @@ public class GrupoTg {
             conn.close();
 
         } catch (SQLException e) {
-            System.out.println("Error ejecutando query");
+            System.out.println("Error ejecutando query select");
             System.out.println(e.getMessage());
         }
     }
