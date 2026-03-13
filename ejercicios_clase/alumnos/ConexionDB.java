@@ -13,7 +13,7 @@ public class ConexionDB {
 
             Connection conexion = DriverManager.getConnection(urlServer, userServer, passwordServer);
 
-            System.out.println("Conexion establecida");
+            // System.out.println("Conexion establecida");
 
             return conexion;
         } catch (SQLException e) {

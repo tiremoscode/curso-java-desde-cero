@@ -13,10 +13,10 @@ public class Alumno {
         this.edad = edad;
     }
 
-    public Alumno(int id, String nombre, int edad) {
-        this.id = id;
+    public Alumno(String nombre, int edad, int id) {
         this.nombre = nombre;
         this.edad = edad;
+        this.id = id;
     }
 
     public int getId() {

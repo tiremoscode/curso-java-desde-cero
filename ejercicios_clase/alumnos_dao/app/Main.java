@@ -24,5 +24,24 @@ public class Main {
             }
         }
 
+        // Crear un nuevo alumnos
+        String nuevoNombreAlumno = "Javier";
+        int nuevoEdadAlumno = 30;
+
+        // Alumno nuevoAlumno = new Alumno(nuevoNombreAlumno, nuevoEdadAlumno);
+        // dao.insertarAlumno(nuevoAlumno);
+
+        // Actualizar el valor de un alumno
+        String actualizarNombreAlumno = "Mauricio";
+        int actualizarEdadAlumno = 20;
+        int originalIdAlumno = 10;
+
+        Alumno actualizarAlumno = new Alumno(actualizarNombreAlumno, actualizarEdadAlumno, originalIdAlumno);
+        // dao.actualizarAlumno(actualizarAlumno);
+
+        // Eliminar un alumno existente
+        int idAlumnoEliminar = 11;
+        dao.eliminarAlumno(idAlumnoEliminar);
+
     }
 }
